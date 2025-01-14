@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- Michelle Hokeness -->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Lace Space</title>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section>
+    <img src="images/LaceSpace-logo-w252xh176.png" alt="logo Lace Space with shoes image" class="logo">
+    <h1>Track miles on all your running shoes</h1>
+    <img src="images/MileafterMile-1080x50.png" alt="green text that says Mile after Mile"  class="col-12">
+    <h3>You will be alerted when a shoe has reached 450+ miles</h3>
+    </section> 
+    <!-- id shoes created for css -->
+    <div id="shoes">
+        <label for="shoes_list" class="miles_on_label">Miles on Shoes</label><br>
+        <textarea id="shoes_list" rows="10" cols="50"></textarea>
+    </div>
+    <div>
+        <label for="shoe" class="shoe_label">Step 1: Enter Shoe</label><br>
+        <input type="text" name="shoe" id="shoe">      
+    </div>  
+    <div>
+      <label for="miles" class="miles_label">Step 2: Enter Miles</label><br>
+      <input type="number" name="miles" id="miles" placeholder="Miles">
+    </div>  
+    <div>
+        <input type="button" name="save_shoes" id="save_shoes" value="Save Shoes"><br>
+        <input type="button" name="clear_shoes" id="clear_shoes" value="Clear All Shoes">      
+    </div>
+  </main> 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="lace-space.js"></script>
+</body>
+</html>

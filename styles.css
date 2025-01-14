@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  margin: 50px auto;
+  width: 1000px;
+  border: 7px double #FF8622;
+  padding: 0 2em 1em;
+}
+h1 { 
+  font-size: 150%;
+  color: #007BA8;
+  margin-bottom: 1em;
+  margin-top: 0;
+  text-align: center;
+}
+h3 {
+  color: #FF8622;
+  text-align: center;
+  margin-bottom: 2.3em;
+}
+div {margin-bottom: 1em;}
+input {
+  width: 22em;
+  margin-left: 75px;
+  margin-bottom: .5em;
+}
+label {
+  color: #055a79;
+  font-weight: 700;
+}
+textarea {
+  color: #034a64;
+  margin-right: 65px;
+  padding-left: 10px;
+}
+.shoe_label, .miles_label {margin-left: 75px;}
+.col-12 {
+  margin-bottom: 2em;
+  width: 100%;
+  padding: 0;
+}
+/* .logo {
+  width: 25%;
+  height: 25%;
+} */
+#miles {
+  width: 18em;
+}
+#shoes {
+  margin-top: 0;
+  float: right;
+}
+#clear_shoes, #save_shoes {
+  width: 18.6em;
+  background-color: #FFA500;
+  border: 1px dotted #269e1d;
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 1027px) {
+  body {
+      width: 80%;
+      border: 7px double #FF8622;
+  }
+  input {
+      width: 18em;
+  }
+  .miles_on_label, textarea {
+    margin-right: 50px;
+    width: 100%;
+}
+  /* .col-12 {
+      content:url(images/MileAfterMile-Art-Mobile.png);
+  } */
+}
+
+@media only screen and (max-width: 1026px) and (min-width: 501px) {
+  body {
+      /* font-family: Arial, Helvetica, sans-serif;
+      background-color: white; */
+      /* margin: 0 auto; */
+      width: 400px;
+      border: 7px double #FF8622;;
+    /* padding: 0 2em 1em; */
+  }
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  .miles_on_label, textarea {
+      margin-left: 10px;
+      width: 90%;
+  }
+  input {
+      width: 18em;
+  }
+  .col-12 {
+      content:url(images/MileAfterMile-Art-Mobile.png);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+      /* font-family: Arial, Helvetica, sans-serif;
+      background-color: white; */
+      /* margin: 0 auto; */
+      width: 400px;
+      border: 7px double #FF8622;;
+    /* padding: 0 2em 1em; */
+  }
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  .miles_on_label, textarea {
+      margin-left: 10px;
+      width: 90%;
+  }
+  input {
+      width: 18em;
+  }
+  .col-12 {
+      content:url(images/MileAfterMile-Art-Mobile.png);
+      /* width: fit-content;
+      padding-right: 75px; */
+  }
+}
+
