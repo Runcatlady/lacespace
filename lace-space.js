@@ -5,7 +5,14 @@ $(document).ready(() => {
         const savedShoes = JSON.parse(localStorage.getItem("myShoes")) || [];
         let displayText = savedShoes
             .map(shoe => {
-                const lastUpdated = new Date(shoe.lastUpdated).toLocaleString();
+                const lastUpdated = new Date(shoe.lastUpdated).toLocaleString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: '2-digit',
+                    hour12: true
+                });
                 return `* ${shoe.name} - ${shoe.mileage} miles - Last updated: ${lastUpdated}`;
             })
             .join("<br>");
