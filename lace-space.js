@@ -8,8 +8,13 @@ $(document).ready(() => {
                 const lastUpdated = new Date(shoe.lastUpdated).toLocaleString();
                 return `* ${shoe.name} - ${shoe.mileage} miles - Last updated: ${lastUpdated}`;
             })
-            .join("\n");
-        $("#shoes_list").val(displayText);
+            .join("<br>");
+        
+        if (displayText === "") {
+            displayText = "No shoes tracked yet. Add a shoe to get started.";
+        }
+
+        $("#shoes_list").html(displayText);
     };
 
     const checkMileageAlert = (shoes) => {
@@ -73,7 +78,7 @@ $(document).ready(() => {
 
     $("#clear_shoes").click(() => {
         localStorage.removeItem("myShoes");
-        $("#shoes_list").val("");
+        $("#shoes_list").text("No shoes tracked yet. Add a shoe to get started.");
         $("#shoe").focus();
     });
 
