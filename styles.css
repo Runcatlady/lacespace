@@ -4,6 +4,7 @@ body {
   margin: 50px auto;
   width: 1000px;
   border: 7px double #FF8622;
+  border-radius: 10px;
   padding: 0 2em 1em;
 }
 h1 { 
@@ -20,18 +21,41 @@ h3 {
 }
 div {margin-bottom: 1em;}
 input {
+  border: 1px solid #007BA8;
+  border-radius: 5px;
   width: 22em;
   margin-left: 75px;
   margin-bottom: .5em;
 }
-label {
+label, .miles_on_label {
   color: #055a79;
   font-weight: 700;
 }
-textarea {
+#shoes_list {
+  background-clip: padding-box;
+  border: 2px double #FF8622;
+  box-sizing: border-box;
   color: #034a64;
   margin-right: 65px;
-  padding-left: 10px;
+  outline: 1px solid #FF8622;
+  overflow: auto;
+  padding: 5px 5px 5px 10px;
+  width: 100%;
+  height: 175px;
+}
+#shoes_list p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #034a64;
+  display: flex;
+  align-items: center;
+}
+
+#shoes_list i {
+  margin-right: 5px;
+}
+.miles_on_label {
+  margin-bottom: 0;
 }
 .shoe_label, .miles_label {margin-left: 75px;}
 .col-12 {
@@ -39,89 +63,118 @@ textarea {
   width: 100%;
   padding: 0;
 }
-/* .logo {
-  width: 25%;
-  height: 25%;
-} */
 #miles {
+  border: 1px double #181817;
+  box-sizing: border-box;
   width: 18em;
+  height: 30px;
+}
+#shoe {
+  border: 1px double #181817;
+  height: 25px;
 }
 #shoes {
+  display: block;
+  box-sizing: border-box;
   margin-top: 0;
-  float: right;
+  float: none;
 }
+#shoes_list {border-radius: 5px;}
 #clear_shoes, #save_shoes {
   width: 18.6em;
-  background-color: #FFA500;
-  border: 1px dotted #269e1d;
+  background-color: #f7e6d3;
+  border: 1px dotted #FF8622;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 1080px) and (min-width: 1027px) {
   body {
-      width: 80%;
-      border: 7px double #FF8622;
+    width: 80%;
+    border: 7px double #FF8622;
   }
   input {
-      width: 18em;
+    width: 18em;
   }
-  .miles_on_label, textarea {
-    margin-right: 50px;
-    width: 100%;
-}
-  /* .col-12 {
-      content:url(images/MileAfterMile-Art-Mobile.png);
-  } */
 }
 
 @media only screen and (max-width: 1026px) and (min-width: 501px) {
   body {
-      /* font-family: Arial, Helvetica, sans-serif;
-      background-color: white; */
-      /* margin: 0 auto; */
-      width: 400px;
-      border: 7px double #FF8622;;
-    /* padding: 0 2em 1em; */
+      margin: 50px auto;
+      width: 90%;
+      max-width: 415px;
+      border: 7px double #FF8622;
   }
   .logo {
     display: block;
-    margin: auto;
+    margin: 0 auto;
   }
-  .miles_on_label, textarea {
-      margin-left: 10px;
-      width: 90%;
+  .miles_on_label {
+      width: 98%;
+      margin: 0 auto;
   }
   input {
-      width: 18em;
+      margin: 0 auto;
+      width: 85%;
   }
+  .shoe_label, .miles_label {margin: 0 auto;}
+  #clear_shoes, #save_shoes {margin: 10px auto;}
   .col-12 {
       content:url(images/MileAfterMile-Art-Mobile.png);
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (min-width: 381px) {
   body {
-      /* font-family: Arial, Helvetica, sans-serif;
-      background-color: white; */
-      /* margin: 0 auto; */
-      width: 400px;
-      border: 7px double #FF8622;;
-    /* padding: 0 2em 1em; */
+      margin: 50px auto;
+      width: 90%;
+      max-width: 288px;
+      border: 7px double #FF8622;
   }
   .logo {
     display: block;
-    margin: auto;
+    margin: 0 auto;
   }
-  .miles_on_label, textarea {
-      margin-left: 10px;
-      width: 90%;
+  .miles_on_label {
+      width: 98%;
+      margin: 0 auto;
   }
   input {
-      width: 18em;
+      margin: 0 auto;
+      width: 85%;
   }
+  .shoe_label, .miles_label {margin: 0 auto;}
+  #clear_shoes, #save_shoes {margin: 13px auto;}
   .col-12 {
       content:url(images/MileAfterMile-Art-Mobile.png);
-      /* width: fit-content;
-      padding-right: 75px; */
   }
 }
 
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 265px;
+    border: 7px double #FF8622;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+.miles_on_label {
+    width: 98%;
+    margin: 0 auto;
+}
+input {
+    margin: 0 auto;
+    width: 85%;
+}
+.shoe_label, .miles_label {
+    margin: 0 auto;
+}
+#clear_shoes, #save_shoes {
+    margin: 13px auto;
+}
+.col-12 {
+    content: url(images/MileAfterMile-Art-Mobile.png);
+} 
+}
